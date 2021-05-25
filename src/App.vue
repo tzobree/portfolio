@@ -12,6 +12,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
+
 #nav {
   padding: 30px;
   display: flex;
@@ -21,6 +22,7 @@
     font-weight: bold;
     color: #2c3e50;
     margin: 0 10px;
+    text-decoration: none;
 
     &.router-link-exact-active {
       color: #42b983;
@@ -35,6 +37,14 @@ body {
 }
 #app {
   font-family: 'Montserrat', Avenir, Helvetica, Arial, sans-serif;
-  height: 100vh;
+  color: #2c3e50;;
+  // a {
+  //   text-decoration: none;
+  //   color: #2c3e50;
+  //   transition: all 0.2s;
+  //   &:hover {
+  //     color: #42b983;
+  //   }
+  // }
 }
 </style>

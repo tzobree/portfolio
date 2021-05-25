@@ -31,7 +31,8 @@
         <h5 class="section-headline"># ostalo</h5>
         <ul class="list">
           <li class="item">Git, Github, Bitbucket, Jira, Slack</li>
-          <li class="item">Wordpress</li>
+          <li class="item">radio sam na Laravel|Vue projektima</li>
+          <li class="item">imam i nekoliko uradjenih Wordpress sajtova</li>
         </ul>
       </section>
       <section class="section">
@@ -52,7 +53,7 @@
         <h5 class="section-headline"># kontakt</h5>
         <ul class="list">
           <li class="item">nebojsaberber@gmail.com</li>
-          <li class="item"><a href="https://www.linkedin.com/in/nebojsa-berber-a943a4132/" target="_blank">LinkedIn profil</a></li>
+          <li class="item"><a href="https://www.linkedin.com/in/nebojsa-berber-a943a4132/" class="link" target="_blank">LinkedIn profil</a></li>
         </ul>
       </section>
     </div>
@@ -67,11 +68,13 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 .home {
   // background: rgb(230, 226, 243);
   .container {
     width: 960px;
+    max-width: 100%;
+    box-sizing: border-box;
     margin: 0 auto;
     padding: 4rem 30px;
     .headline {
@@ -81,6 +84,14 @@ export default {
       margin-bottom: 3rem;
       .section-headline {
         margin-bottom: 1rem;
+      }
+      .list {
+        .item {
+          .link {
+            text-decoration: underline;
+            color: #42b983;
+          }
+        }
       }
     }
   }
