@@ -11,8 +11,7 @@
             <a href="https://startuplist.africa/ecosystem" target="_blank" class="project-link">
               <h5 class="title">gym.fitbrry</h5>
             </a>
-            <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, expedita soluta ex atque dicta dolores eveniet veritatis omnis debitis incidunt.</p>
-            <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, expedita soluta ex atque dicta dolores eveniet veritatis omnis debitis incidunt.</p>
+            <p class="desc">Web aplikacija za administraciju u teretanama i fitnes centrima. Laravel,  inertia.js, Vue i Vuetify, 50+ stranica i komponenti.</p>
           </div>
         </div>
         <div class="project">
@@ -23,8 +22,7 @@
             <a href="https://startuplist.africa/ecosystem" target="_blank" class="project-link">
               <h5 class="title">startuplist.africa</h5>
             </a>
-            <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, expedita soluta ex atque dicta dolores eveniet veritatis omnis debitis incidunt.</p>
-            <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, expedita soluta ex atque dicta dolores eveniet veritatis omnis debitis incidunt.</p>
+            <p class="desc">Baza startup-ova u Africi, za klijenta iz Nigerije, ostvaruje dosta poseta pa se više ne razvija u izradi je druga verzija. Oba su rađena u Vue, u drugoj je dodat Quasar.</p>
           </div>
         </div>
         <div class="project">
@@ -35,8 +33,7 @@
             <a href="https://bitbata.com/" target="_blank" class="project-link">
               <h5 class="title">bitbata</h5>
             </a>
-            <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, expedita soluta ex atque dicta dolores eveniet veritatis omnis debitis incidunt.</p>
-            <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, expedita soluta ex atque dicta dolores eveniet veritatis omnis debitis incidunt.</p>
+            <p class="desc">Dokumentacija za kripto API, frontend je Gridsome (Vue) i Tailwind.css.</p>
           </div>
         </div>
         <div class="project">
@@ -47,8 +44,7 @@
             <a href="https://brainboxnigeria.netlify.app/" target="_blank" class="project-link">
               <h5 class="title">brainbox</h5>
             </a>
-            <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, expedita soluta ex atque dicta dolores eveniet veritatis omnis debitis incidunt.</p>
-            <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, expedita soluta ex atque dicta dolores eveniet veritatis omnis debitis incidunt.</p>
+            <p class="desc">Web app, platforma za postavljanje diplomskih radova. Frontend je Vue.js.</p>
           </div>
         </div>
         <div class="project">
@@ -57,10 +53,9 @@
           </div>
           <div class="info">
             <a href="http://kreveti.com/" target="_blank" class="project-link">
-              <h5 class="title">Wordpress Kreveti</h5>
+              <h5 class="title">kreveti</h5>
             </a>
-            <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, expedita soluta ex atque dicta dolores eveniet veritatis omnis debitis incidunt.</p>
-            <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, expedita soluta ex atque dicta dolores eveniet veritatis omnis debitis incidunt.</p>
+            <p class="desc">Sajt kompanije koja proizvodi krevete rađen u Wordpress-u. Prilagođena tema, dorađen CSS, 3 jezika...</p>
           </div>
         </div>
       </div>

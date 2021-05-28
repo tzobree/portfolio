@@ -14,7 +14,7 @@
 
 
 #nav {
-  padding: 30px;
+  padding: 20px 30px;
   display: flex;
   justify-content: center;
   background: rgba(13, 21, 34, 0.884);
