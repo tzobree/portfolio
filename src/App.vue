@@ -17,15 +17,22 @@
   padding: 30px;
   display: flex;
   justify-content: center;
+  background: rgba(13, 21, 34, 0.884);
 
   a {
-    font-weight: bold;
-    color: #2c3e50;
+    font-weight: 500;
+    // color: #2c3e50;
+    color: rgba(248, 248, 248, 0.767);
+    transition: all 0.2s;
+    &:hover {
+      color: rgba(255, 255, 255, 0.897);
+    }
     margin: 0 10px;
     text-decoration: none;
 
     &.router-link-exact-active {
-      color: #42b983;
+      color: rgb(255, 255, 255);
+      // color: #42b983;
     }
   }
 }

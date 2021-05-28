@@ -76,7 +76,7 @@ export default {
     max-width: 100%;
     box-sizing: border-box;
     margin: 0 auto;
-    padding: 4rem 30px;
+    padding: 6rem 30px;
     .headline {
       margin: 0 0 4rem;
     }
@@ -86,6 +86,8 @@ export default {
         margin-bottom: 1rem;
       }
       .list {
+        list-style: none;
+        padding-left: 0;
         .item {
           .link {
             text-decoration: underline;
