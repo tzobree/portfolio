@@ -1,38 +1,86 @@
 <template>
   <div id="app">
     <div id="nav">
-      <router-link to="/">Početna</router-link> |
-      <router-link to="/projects">Projekti</router-link>
+      <router-link to="/">{{ $t('home') }}</router-link> |
+      <router-link to="/projects">{{ $t('projects') }}</router-link>
+      <!-- <div class="lang">
+        <a @click="changeLocale('sr')" class="btn" :class="{ 'active' : $i18n.locale==='sr' }">Sr</a>
+        <a @click="changeLocale('en')" class="btn" :class="{ 'active' : $i18n.locale==='en' }">En</a>
+      </div> -->
     </div>
     <router-view/>
   </div>
 </template>
 
+
+<script>
+import i18n from '@/plugins/i18n'
+export default {
+  methods: {
+    changeLocale(lang) {
+      i18n.locale = lang
+    }
+  }
+}
+</script>
+
+
 <style lang="scss">
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
+@mixin max-w($maxW){
+  @media only screen and (max-width: $maxW) {
+    @content;
+  }
+}
 
 #nav {
   padding: 20px 30px;
   display: flex;
   justify-content: center;
   background: rgba(13, 21, 34, 0.884);
+  color: rgba(60, 81, 114, 0.932);
+  position: relative;
+  @include max-w(639px) {
+    justify-content: flex-start;
+    padding: 20px 15px;
+  }
 
   a {
     font-weight: 500;
-    // color: #2c3e50;
+    text-decoration: none;
     color: rgba(248, 248, 248, 0.767);
     transition: all 0.2s;
     &:hover {
       color: rgba(255, 255, 255, 0.897);
     }
     margin: 0 10px;
-    text-decoration: none;
+    @include max-w(639px) {
+      margin: 0 10px 0 0;
+    }
 
     &.router-link-exact-active {
       color: rgb(255, 255, 255);
       // color: #42b983;
+    }
+  }
+
+  .lang {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    .btn {
+      cursor: pointer;
+      font-size: 0.875rem;
+      margin: 0 0 0 10px;
+      transition: all 0.2s;
+      &:hover {
+        color: rgba(255, 255, 255, 0.897);
+      }
+      &.active {
+        color: #FFFFFF;
+      }
     }
   }
 }
@@ -53,23 +101,6 @@ body {
   //     color: #42b983;
   //   }
   // }
-}
-
-
-@mixin max-w($maxW){
-  @media only screen and (max-width: $maxW) {
-    @content;
-  }
-}
-.projects {
-  // background: rgb(230, 226, 243);
-  .container {
-    width: 960px;
-    max-width: 100%;
-    box-sizing: border-box;
-    margin: 0 auto;
-    padding: 6rem 30px;
-  }
 }
 
 .fade-enter-active, .fade-leave-active {

@@ -5,20 +5,20 @@
 		<transition name="fade">
       <div v-show="show">
         <section class="section">
-          <h5 class="section-headline"># opšte</h5>
+          <h5 class="section-headline"># {{ $t('general') }}</h5>
           <ul class="list">
-            <li class="item">Septembar 2018 / Oktobar 2020 - freelancing | HTML / CSS / JS (Vue) / Wordpress</li>
-            <li class="item">Oktobar 2020 / do sad - frontend developer u Treeshaker d.o.o. | Vue</li>
+            <li class="item">{{ $t('general1') }}</li>
+            <li class="item">{{ $t('general2') }}</li>
           </ul>
         </section>
         <section class="section">
           <h5 class="section-headline"># CSS</h5>
           <ul class="list">
-            <li class="item">potpuno responzivno i za najmanje ekrane</li>
-            <li class="item">od dizajna (PDF, Invision, Figma...) do gotovog interfejsa</li>
-            <li class="item">uvek koristim SASS(SCSS)</li>
-            <li class="item">radio sam sa Vuetify, Quasar, Bulma/Buefy, Tailwind.css, Bootstrap, UIkit...</li>
-            <li class="item">CSS3, Flexbox, Grid, Tranzicije...</li>
+            <li class="item">{{ $t('css1') }}</li>
+            <li class="item">{{ $t('css2') }}</li>
+            <li class="item">{{ $t('css3') }}</li>
+            <li class="item">{{ $t('css4') }}</li>
+            <li class="item">{{ $t('css5') }}</li>
           </ul>
         </section>
         <section class="section">

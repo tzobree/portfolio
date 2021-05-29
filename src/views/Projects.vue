@@ -6,7 +6,7 @@
       <div class="list" v-show="show">
         <div class="project">
           <div class="img-wrap">
-            <img src="img/fitbrry.jpg" alt="">
+            <img :src="images.img1" alt="">
           </div>
           <div class="info">
             <router-link to="/gym" class="project-link">
@@ -17,7 +17,7 @@
         </div>
         <div class="project">
           <div class="img-wrap">
-            <img src="img/startups-africa.jpg" alt="">
+            <img :src="images.img2" alt="">
           </div>
           <div class="info">
             <a href="https://startuplist.africa/ecosystem" target="_blank" class="project-link">
@@ -28,7 +28,7 @@
         </div>
         <div class="project">
           <div class="img-wrap">
-            <img src="img/bitbata.jpg" alt="">
+            <img :src="images.img3" alt="">
           </div>
           <div class="info">
             <a href="https://bitbata.com/" target="_blank" class="project-link">
@@ -39,7 +39,7 @@
         </div>
         <div class="project">
           <div class="img-wrap">
-            <img src="img/brainbox.jpg" alt="">
+            <img :src="images.img4" alt="">
           </div>
           <div class="info">
             <a href="https://brainboxnigeria.netlify.app/" target="_blank" class="project-link">
@@ -50,7 +50,7 @@
         </div>
         <div class="project">
           <div class="img-wrap">
-            <img src="img/kreveti.jpg" alt="">
+            <img :src="images.img5" alt="">
           </div>
           <div class="info">
             <a href="http://kreveti.com/" target="_blank" class="project-link">
@@ -69,13 +69,25 @@
 export default {
 	data() {
 		return {
-			show: false
+			show: false,
+      images: {}
 		}
 	},
 	mounted() {
-		this.show = true
-	}
-
+    this.loadImages()
+	},
+  methods: {
+    async loadImages() {
+      this.images = {
+        img1: await require('./../../public/img/fitbrry.jpg'),
+        img2: await require('./../../public/img/startups-africa.jpg'),
+        img3: await require('./../../public/img/bitbata.jpg'),
+        img4: await require('./../../public/img/brainbox.jpg'),
+        img5: await require('./../../public/img/kreveti.jpg'),
+      }
+      this.show = true
+    }
+  }
 }
 </script>
 
