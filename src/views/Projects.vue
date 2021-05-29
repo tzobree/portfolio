@@ -2,7 +2,8 @@
   <div class="projects">
     <div class="container">
       <h3 class="headline">Projekti</h3>
-      <div class="list">
+		<transition name="fade">
+      <div class="list" v-show="show">
         <div class="project">
           <div class="img-wrap">
             <img src="img/fitbrry.jpg" alt="">
@@ -59,9 +60,24 @@
           </div>
         </div>
       </div>
+    </transition>
     </div>
   </div>
 </template>
+
+<script>
+export default {
+	data() {
+		return {
+			show: false
+		}
+	},
+	mounted() {
+		this.show = true
+	}
+
+}
+</script>
 
 <style lang="scss">
 @mixin max-w($maxW){

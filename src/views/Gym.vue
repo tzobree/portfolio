@@ -2,8 +2,9 @@
 	<div class="gym">
 		<div class="container">
 			<h3 class="headline">Administracija za teretane i fitnes centre</h3>
-			<p class="sub">MVP aplikacije je završen, stranica je u izradi. Backend je Laravel i Inertia.js, frontend je Vue i Vuetify</p>
-			<div class="grid">
+			<p class="sub">MVP aplikacije je završen, stranica je u izradi. Backend je Laravel i Inertia.js, frontend je Vue i Vuetify.</p>
+		<transition name="fade">
+			<div class="grid" v-show="show">
 				<div class="row">
 					<div class="screenshot">
 						<img src="img/gym/members.jpg" alt="">
@@ -25,12 +26,21 @@
 					</div>
 				</div>
 			</div>
+		</transition>
 		</div>
 	</div>
 </template>
 
 <script>
 export default {
+	data() {
+		return {
+			show: false
+		}
+	},
+	mounted() {
+		this.show = true
+	}
 
 }
 </script>
