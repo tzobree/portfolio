@@ -34,7 +34,7 @@
           <ul class="list">
             <li class="item">Git, Github, Bitbucket, Jira, Slack</li>
             <li class="item">radio sam na Laravel|Vue projektima</li>
-            <li class="item">imam i nekoliko uradjenih Wordpress sajtova</li>
+            <li class="item">imam i nekoliko urađenih Wordpress sajtova</li>
           </ul>
         </section>
         <section class="section">
