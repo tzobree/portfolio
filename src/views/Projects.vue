@@ -8,9 +8,9 @@
             <img src="img/fitbrry.jpg" alt="">
           </div>
           <div class="info">
-            <a href="https://startuplist.africa/ecosystem" target="_blank" class="project-link">
+            <router-link to="/gym" class="project-link">
               <h5 class="title">gym.fitbrry</h5>
-            </a>
+            </router-link>
             <p class="desc">Web aplikacija za administraciju u teretanama i fitnes centrima. Laravel,  inertia.js, Vue i Vuetify, 50+ stranica i komponenti.</p>
           </div>
         </div>
