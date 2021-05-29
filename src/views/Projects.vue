@@ -86,13 +86,15 @@ export default {
   }
 }
 .projects {
-  // background: rgb(230, 226, 243);
   .container {
     width: 960px;
     max-width: 100%;
     box-sizing: border-box;
     margin: 0 auto;
     padding: 6rem 30px;
+    @include max-w(639px) {
+      padding: 6rem 15px;
+    }
     .headline {
       margin: 0 0 2rem;
       // @include max-w(767px) {

@@ -54,6 +54,24 @@ body {
   //   }
   // }
 }
+
+
+@mixin max-w($maxW){
+  @media only screen and (max-width: $maxW) {
+    @content;
+  }
+}
+.projects {
+  // background: rgb(230, 226, 243);
+  .container {
+    width: 960px;
+    max-width: 100%;
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 6rem 30px;
+  }
+}
+
 .fade-enter-active, .fade-leave-active {
   transition: opacity .5s;
 }

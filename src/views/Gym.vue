@@ -47,14 +47,21 @@ export default {
 
 
 <style lang="scss">
+@mixin max-w($maxW){
+  @media only screen and (max-width: $maxW) {
+    @content;
+  }
+}
 .gym {
-  // background: rgb(230, 226, 243);
   .container {
     width: 960px;
     max-width: 100%;
     box-sizing: border-box;
     margin: 0 auto;
     padding: 6rem 30px;
+    @include max-w(639px) {
+      padding: 6rem 15px;
+    }
     .headline {
       margin: 0 0 4rem;
     }
@@ -62,6 +69,17 @@ export default {
 			.row {
 				margin: 4rem 0;
 				min-height: 400px;
+				display: flex;
+				.screenshot {
+					max-width: 100%;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					img {
+						max-width: 100%;
+						object-fit: contain;
+					}
+				}
 			}
 		}
 	}

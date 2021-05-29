@@ -81,14 +81,21 @@ export default {
 </script>
 
 <style lang="scss">
+@mixin max-w($maxW){
+  @media only screen and (max-width: $maxW) {
+    @content;
+  }
+}
 .home {
-  // background: rgb(230, 226, 243);
   .container {
     width: 960px;
     max-width: 100%;
     box-sizing: border-box;
     margin: 0 auto;
     padding: 6rem 30px;
+    @include max-w(639px) {
+      padding: 6rem 15px;
+    }
     .headline {
       margin: 0 0 4rem;
     }
