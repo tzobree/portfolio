@@ -61,6 +61,7 @@ export default {
 		.grid {
 			.row {
 				margin: 4rem 0;
+				min-height: 400px;
 			}
 		}
 	}
