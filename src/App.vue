@@ -1,12 +1,12 @@
 <template>
   <div id="app">
     <div id="nav">
-      <router-link to="/">{{ $t('home') }}</router-link> |
-      <router-link to="/projects">{{ $t('projects') }}</router-link>
-      <!-- <div class="lang">
+      <router-link to="/">{{ $t('navHome') }}</router-link> |
+      <router-link to="/projects">{{ $t('navProjects') }}</router-link>
+      <div class="lang">
         <a @click="changeLocale('sr')" class="btn" :class="{ 'active' : $i18n.locale==='sr' }">Sr</a>
         <a @click="changeLocale('en')" class="btn" :class="{ 'active' : $i18n.locale==='en' }">En</a>
-      </div> -->
+      </div>
     </div>
     <router-view/>
   </div>

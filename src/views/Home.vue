@@ -5,20 +5,20 @@
 		<transition name="fade">
       <div v-show="show">
         <section class="section">
-          <h5 class="section-headline"># {{ $t('general') }}</h5>
+          <h5 class="section-headline"># {{ $t('home.general') }}</h5>
           <ul class="list">
-            <li class="item">{{ $t('general1') }}</li>
-            <li class="item">{{ $t('general2') }}</li>
+            <li class="item">{{ $t('home.general1') }}</li>
+            <li class="item">{{ $t('home.general2') }}</li>
           </ul>
         </section>
         <section class="section">
           <h5 class="section-headline"># CSS</h5>
           <ul class="list">
-            <li class="item">{{ $t('css1') }}</li>
-            <li class="item">{{ $t('css2') }}</li>
-            <li class="item">{{ $t('css3') }}</li>
-            <li class="item">{{ $t('css4') }}</li>
-            <li class="item">{{ $t('css5') }}</li>
+            <li class="item">{{ $t('home.css1') }}</li>
+            <li class="item">{{ $t('home.css2') }}</li>
+            <li class="item">{{ $t('home.css3') }}</li>
+            <li class="item">{{ $t('home.css4') }}</li>
+            <li class="item">{{ $t('home.css5') }}</li>
           </ul>
         </section>
         <section class="section">
@@ -30,32 +30,32 @@
           </ul>
         </section>
         <section class="section">
-          <h5 class="section-headline"># ostalo</h5>
+          <h5 class="section-headline"># {{ $t('home.other') }}</h5>
           <ul class="list">
             <li class="item">Git, Github, Bitbucket, Jira, Slack</li>
-            <li class="item">radio sam na Laravel|Vue projektima</li>
-            <li class="item">imam i nekoliko urađenih Wordpress sajtova</li>
+            <li class="item">{{ $t('home.other2') }}</li>
+            <li class="item">{{ $t('home.other3') }}</li>
           </ul>
         </section>
         <section class="section">
-          <h5 class="section-headline"># u planu</h5>
+          <h5 class="section-headline"># {{ $t('home.plan') }}</h5>
           <ul class="list">
-            <li class="item">Vue3, Typescript, React, React Native, GraphQL, Laravel, JAMstack, E-Commerce</li>
+            <li class="item">Vue3, Typescript, React, React Native, GraphQL, Laravel, Node.js, JAMstack, E-Commerce</li>
           </ul>
         </section>
         <section class="section">
-          <h5 class="section-headline"># još nešto</h5>
+          <h5 class="section-headline"># {{ $t('home.more') }}</h5>
           <ul class="list">
-            <li class="item">radio sam u timu i samostalno, za domaće i inostrane klijente</li>
-            <li class="item">engleski odličan</li>
-            <li class="item">slobodno vreme trošim uglavnom na biciklizam i planinarenje</li>
+            <li class="item">{{ $t('home.more1') }}</li>
+            <li class="item">{{ $t('home.more2') }}</li>
+            <li class="item">{{ $t('home.more3') }}</li>
           </ul>
         </section>
         <section class="section">
-          <h5 class="section-headline"># kontakt</h5>
+          <h5 class="section-headline"># {{ $t('home.contact') }}</h5>
           <ul class="list">
             <li class="item">nebojsaberber@gmail.com</li>
-            <li class="item"><a href="https://www.linkedin.com/in/nebojsa-berber-a943a4132/" class="link" target="_blank">LinkedIn profil</a></li>
+            <li class="item"><a href="https://www.linkedin.com/in/nebojsa-berber-a943a4132/" class="link" target="_blank">{{ $t('home.contact2') }}</a></li>
           </ul>
         </section>
       </div>

@@ -1,18 +1,18 @@
 <template>
   <div class="projects">
     <div class="container">
-      <h3 class="headline">Projekti</h3>
+      <h3 class="headline">{{ $t('projects.title') }}</h3>
 		<transition name="fade">
-      <div class="list" v-show="show">
+      <div class="list" v-show="show" v-cloak>
         <div class="project">
           <div class="img-wrap">
-            <img :src="images.img1" alt="">
+            <img :src="images.img1" alt="" @load="show=true">
           </div>
           <div class="info">
             <router-link to="/gym" class="project-link">
               <h5 class="title">gym.fitbrry</h5>
             </router-link>
-            <p class="desc">Web aplikacija za administraciju u teretanama i fitnes centrima. Laravel,  inertia.js, Vue i Vuetify, 50+ stranica i komponenti.</p>
+            <p class="desc">{{ $t('projects.gym1') }}</p>
           </div>
         </div>
         <div class="project">
@@ -23,7 +23,7 @@
             <a href="https://startuplist.africa/ecosystem" target="_blank" class="project-link">
               <h5 class="title">startuplist.africa</h5>
             </a>
-            <p class="desc">Baza startup-ova u Africi, za klijenta iz Nigerije, ostvaruje dosta poseta pa se više ne razvija u izradi je druga verzija. Oba su rađena u Vue, u drugoj je dodat Quasar.</p>
+            <p class="desc">{{ $t('projects.startups1') }}</p>
           </div>
         </div>
         <div class="project">
@@ -34,7 +34,7 @@
             <a href="https://bitbata.com/" target="_blank" class="project-link">
               <h5 class="title">bitbata</h5>
             </a>
-            <p class="desc">Dokumentacija za kripto API, frontend je Gridsome (Vue) i Tailwind.css.</p>
+            <p class="desc">{{ $t('projects.bitbata1') }}</p>
           </div>
         </div>
         <div class="project">
@@ -45,7 +45,7 @@
             <a href="https://brainboxnigeria.netlify.app/" target="_blank" class="project-link">
               <h5 class="title">brainbox</h5>
             </a>
-            <p class="desc">Web app, platforma za postavljanje diplomskih radova. Frontend je Vue.js.</p>
+            <p class="desc">{{ $t('projects.brainbox1') }}</p>
           </div>
         </div>
         <div class="project">
@@ -54,9 +54,9 @@
           </div>
           <div class="info">
             <a href="http://kreveti.com/" target="_blank" class="project-link">
-              <h5 class="title">kreveti</h5>
+              <h5 class="title">{{ $t('projects.beds') }}</h5>
             </a>
-            <p class="desc">Sajt kompanije koja proizvodi krevete rađen u Wordpress-u. Prilagođena tema, dorađen CSS, 3 jezika...</p>
+            <p class="desc">{{ $t('projects.beds1') }}</p>
           </div>
         </div>
       </div>
@@ -78,12 +78,12 @@ export default {
 	},
   methods: {
     async loadImages() {
-      this.images = {
-        img1: await require('./../../public/img/fitbrry.jpg'),
-        img2: await require('./../../public/img/startups-africa.jpg'),
-        img3: await require('./../../public/img/bitbata.jpg'),
-        img4: await require('./../../public/img/brainbox.jpg'),
-        img5: await require('./../../public/img/kreveti.jpg'),
+      this.images = await {
+        img1: require('./../../public/img/fitbrry.jpg'),
+        img2: require('./../../public/img/startups-africa.jpg'),
+        img3: require('./../../public/img/bitbata.jpg'),
+        img4: require('./../../public/img/brainbox.jpg'),
+        img5: require('./../../public/img/kreveti.jpg'),
       }
       this.show = true
     }
@@ -92,6 +92,11 @@ export default {
 </script>
 
 <style lang="scss">
+
+[v-cloak] {
+  display: none;
+}
+
 @mixin max-w($maxW){
   @media only screen and (max-width: $maxW) {
     @content;
