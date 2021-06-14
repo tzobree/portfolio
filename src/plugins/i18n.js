@@ -32,7 +32,7 @@ const messages = {
             gym1: 'Web app for administration in gyms and fitness centers. Laravel, Inertia.js, Vue and Vuetify, 50+ pages and components.',
             startups1: 'Database of startups in Africa, client from Nigeria, app is making some traffic so development of this version is omitted new one is in progress. Vue is framework, Quasar has been introduced on new version.',
             bitbata1: 'Documentation for crypto API, frontend is Gridsome (Vue) and Tailwind.css.',
-            brainbox1: '',
+            brainbox1: 'Web app, platform for uploading graduate exam projects and materials. Frontend is Vue.js.',
             beds: 'Beds',
             beds1: 'Website for the bed manufacturing company built with Wordpress. Adapted theme, added CSS, 3 languages...'
         },
