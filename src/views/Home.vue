@@ -55,6 +55,7 @@
           <h5 class="section-headline"># {{ $t('home.contact') }}</h5>
           <ul class="list">
             <li class="item">nebojsaberber@gmail.com</li>
+            <li class="item">063/8937308</li>
             <li class="item"><a href="https://www.linkedin.com/in/nebojsa-berber-a943a4132/" class="link" target="_blank">{{ $t('home.contact2') }}</a></li>
           </ul>
         </section>
