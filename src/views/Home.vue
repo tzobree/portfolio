@@ -40,7 +40,7 @@
         <section class="section">
           <h5 class="section-headline"># {{ $t('home.plan') }}</h5>
           <ul class="list">
-            <li class="item">Vue3, Typescript, React, React Native, GraphQL, Laravel, Node.js, JAMstack, E-Commerce</li>
+            <li class="item">Vue3, Jest, Typescript, React, React Native, GraphQL, Laravel, Node.js, JAMstack, E-Commerce</li>
           </ul>
         </section>
         <section class="section">
@@ -55,7 +55,6 @@
           <h5 class="section-headline"># {{ $t('home.contact') }}</h5>
           <ul class="list">
             <li class="item">nebojsaberber@gmail.com</li>
-            <li class="item">063/8937308</li>
             <li class="item"><a href="https://www.linkedin.com/in/nebojsa-berber-a943a4132/" class="link" target="_blank">{{ $t('home.contact2') }}</a></li>
           </ul>
         </section>

@@ -9,8 +9,8 @@ const messages = {
         navProjects: 'Projects',
         home: {
             general: 'general',
-            general1: 'September 2018 / October 2020 - freelancing | HTML / CSS / JS (Vue) / Wordpress',
-            general2: 'October 2020 / till present - frontend developer at Treeshaker d.o.o. | Vue',
+            general1: 'January 2018 / October 2020 - freelancing | HTML / CSS / JS (Vue) / Wordpress',
+            general2: 'October 2020 / June 2021 - frontend developer at Treeshaker d.o.o. | Vue',
             css1: 'responsive on any screen size',
             css2: 'from design (PDF, Invision, Figma...) to finished interface',
             css3: 'I always use SASS(SCSS)',
@@ -46,8 +46,8 @@ const messages = {
         navProjects: 'Projekti',
         home: {
             general: 'opšte',
-            general1: 'Septembar 2018 / Oktobar 2020 - freelancing | HTML / CSS / JS (Vue) / Wordpress',
-            general2: 'Oktobar 2020 / do sad - frontend developer u Treeshaker d.o.o. | Vue',
+            general1: 'Januar 2018 / Oktobar 2020 - freelancing | HTML / CSS / JS (Vue) / Wordpress',
+            general2: 'Oktobar 2020 / Jun 2021 - frontend developer u Treeshaker d.o.o. | Vue',
             css1: 'potpuno responzivno i za najmanje ekrane',
             css2: 'od dizajna (PDF, Invision, Figma...) do gotovog interfejsa',
             css3: 'uvek koristim SASS(SCSS)',
