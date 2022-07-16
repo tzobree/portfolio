@@ -9,6 +9,7 @@
           <ul class="list">
             <li class="item">{{ $t('home.general1') }}</li>
             <li class="item">{{ $t('home.general2') }}</li>
+            <li class="item">{{ $t('home.general3') }}</li>
           </ul>
         </section>
         <section class="section">
