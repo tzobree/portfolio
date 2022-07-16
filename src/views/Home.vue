@@ -25,7 +25,7 @@
           <h5 class="section-headline"># JS</h5>
           <ul class="list">
             <li class="item">VanillaJS, jQuery</li>
-            <li class="item">Vue2 (Nuxt, Gridsome), VueRouter, Vuex, Vue-cli</li>
+            <li class="item">Vue3, Vue2 (Nuxt, Gridsome), VueRouter, Vuex, Vue-cli</li>
             <li class="item">NPM, Webpack, REST API, Axios</li>
           </ul>
         </section>
@@ -40,7 +40,7 @@
         <section class="section">
           <h5 class="section-headline"># {{ $t('home.plan') }}</h5>
           <ul class="list">
-            <li class="item">Vue3, Jest, Typescript, React, React Native, GraphQL, Laravel, Node.js, JAMstack, E-Commerce</li>
+            <li class="item">Jest, Typescript, React, React Native, GraphQL, Laravel, Node.js, JAMstack, E-Commerce</li>
           </ul>
         </section>
         <section class="section">
